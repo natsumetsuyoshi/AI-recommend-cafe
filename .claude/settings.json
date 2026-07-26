@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(functional-design)",
+      "Skill(architecture-design)",
+      "Skill(development-guidelines)",
+      "Skill(steering)"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "hooks": {}
+}
