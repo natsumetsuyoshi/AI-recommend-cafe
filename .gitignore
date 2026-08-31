@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +40,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 作業計画・タスクリスト（steering スキルの出力）
+# 1つの作業指示ごとに1ディレクトリ増える、その場限りのプロセス文書。
+# 恒久的に残す決定と理由は docs/ 配下へ昇格させる運用にしている。
+/.steering
+
+# Codex（ChatGPT アプリ同梱）が Claude Code 設定から自動生成したもの。
+# .agents/skills は .claude/skills の複製、.codex/agents は同 .md の TOML 変換。
+# Codex は使わないので追跡しない。実体の管理は .claude/ 側で行う。
+/.agents
+/.codex
